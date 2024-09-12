@@ -1,7 +1,11 @@
 <script>
     import axios from 'axios'
+    import PokemonDetails from './PokemonDetails.vue'
     export default{
         name: 'SearchPokemon',
+        components: {
+            PokemonDetails
+        },
         data() {
             return {
                 pokemonName: '',
@@ -24,6 +28,7 @@
 <template>
     <input v-model="pokemonName" placeholder="Cerca un pokemon">
     <button @click="searchPokemon">Cerca</button>
+    <PokemonDetails></PokemonDetails>
 </template>
 
 <style lang="scss" scoped>

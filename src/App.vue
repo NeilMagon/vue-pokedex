@@ -1,8 +1,8 @@
 <script>
-  import SearchPokemon from './components/SearchPokemon.vue'
+  import Main from './components/Main.vue'
   export default{
     components:{
-      SearchPokemon,
+      Main,
     }
   }
 </script>
@@ -11,7 +11,7 @@
   <div class="text-center m-2">
     <h1>PokeVue</h1>
   </div>
-  <SearchPokemon></SearchPokemon>
+  <Main></Main>
 </template>
 
 <style lang="scss" scoped>
